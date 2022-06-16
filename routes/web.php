@@ -13,6 +13,6 @@ use App\Http\Controllers\EventoController;
 |
 */
 
-Route::get('/', function () {
+Route::get('/welcome', function () {
     return view('welcome');
 });
