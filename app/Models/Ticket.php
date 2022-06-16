@@ -11,6 +11,9 @@ class Ticket extends Model
     protected $fillable=[
         'id_area',
         'id_user',
-        'cantidad',
+        'id_event',
+        'name_area',
+        'name_event',
+        'estado',
     ];
 }
