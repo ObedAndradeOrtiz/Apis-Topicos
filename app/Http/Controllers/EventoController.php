@@ -37,12 +37,14 @@ class EventoController extends Controller
      */
     public function store(Request $request)
     {
+        
         $evento=Evento::create($request->all());
         return response()->json([
            'res'=>true,
            'id'=>$evento->id,
            'msg'=>'Evento guardado correctamente'
        ]);
+    
     }
 
     /**
